@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Testing QA - Tecno3F</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="contenedorPortada">
+      <img class="portada" src="./assets/logoTecno3F.png" alt="">
+    </div>
+    <div class="container">
+      <div class="container2">
+        <button class="tab botoncito btnCarga btnIzq" data-tab="tab1">Enviar</button>
+        <button class="tab botoncito btnCarga btnCen" data-tab="tab2">Consultar</button>
+        <button class="tab botoncito btnCarga btnDer" data-tab="tab3">Asistencia</button>
+      </div>
+      <div class="tab-content" id="tab1">
+        <div class="container gallery-container">
+          <div class="tz-gallery formulario">
+              <div class="tz-gallery dos">
+                <form name="submit-to-google-sheet">
+                    <label for="Grupo">Ingresa Tu Apellido</label>
+                    <input name="Grupo" type="text" placeholder="Soy un Apellido" required>
+                    <label for="Imagen">Ingresa Tu Nombre</label>
+                    <input name="Imagen" type="text" placeholder="soy un Nombre" required>
+                    <label for="Enlace">Ingresa Tu Mail</label>
+                    <input name="Enlace" type="text" placeholder="ejemplo@ejemplo.com" required>
+                    <label for="Repositorio">Ingresa Tu Dni (Sin Puntos) </label>
+                    <input name="Repositorio" type="text" placeholder="EJ: 11111111" required>
+                    <label for="Repositorio">Ingresa La URL (Con acceso de Editor) </label>
+                    <input name="Repositorio" type="text" placeholder="Ingresa la url del Documento" required>
+                    
+                    <button type="submit" class="botoncito btnForm">Enviar</button>
+                    <p>Todos los campos son obligatorios</p>
+                  </form>
+              </div> 
+          </div>
+        </div>
+      </div>
+      <div class="tab-content" id="tab3">
+        <div class="container gallery-container">
+
+
+
+          <h2>Hola</h2>
+      
+        </div>
+      </div>
+      <div class="tab-content" id="tab2">
+        <div class="container gallery-container conte2">
+          <div class="tz-gallery formulario form2 form3">
+            <div class="tz-gallery dos gtres">
+              <form name="submit-to-google-sheet">
+                <label for="Repositorio">Ingresa Tu Dni (Sin Puntos) </label>
+                <input name="Repositorio" type="text" placeholder="EJ: 11111111" required id="dni2">
+                
+                <button type="button" class="botoncito btnForm2" id="consultar">Consultar</button>
+              </form>
+            </div>
+            <div id="resultado">
+              <table id="tablaResultados">
+                
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="pie"> © Copyright Todos los Derechos Reservados | Desarrollado por los Facilitadores</div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script type='text/javascript'>
+      //document.oncontextmenu = function(){return false}
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+      baguetteBox.run('.tz-gallery');
+    </script>
+    <script src="./js/getDni.js"></script>
+  </body>
+</html>
